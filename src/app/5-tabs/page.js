@@ -7,8 +7,6 @@ export default function Page() {
     <html className="h-full">
       <body className="h-full grid place-items-center gap-2">
         <Tabs />
-        <Tabs />
-        <Tabs />
       </body>
     </html>
   )
