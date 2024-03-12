@@ -26,15 +26,15 @@ export default function Slideshow() {
   const image = images[current]
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="popLayout">
       <motion.img
         key={image}
         src={image}
         alt=""
         className="aspect-square object-cover w-96"
-        initial={{ y: "100vh" }}
-        animate={{ y: 0 }}
-        exit={{ y: "-100vh" }}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 0 }}
       />
     </AnimatePresence>
   )
